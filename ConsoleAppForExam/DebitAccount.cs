@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleAppForExam
 {
-    public class DepositAccount : Account
+    public class DebitAccount : Account
     {
         protected override decimal Calculatewithdraw(decimal ammount)
         {

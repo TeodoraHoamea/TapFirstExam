@@ -4,8 +4,9 @@ using System.Text;
 
 namespace ConsoleAppForExam
 {
-    public abstract class Account
+    public abstract class Account : IAccount
     {
+        //ctrl+R+I pentru a crea interfata
         public decimal Balance { get; private set; }
 
         public void Deposite(decimal ammount)

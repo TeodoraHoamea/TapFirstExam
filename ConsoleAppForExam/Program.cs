@@ -11,7 +11,7 @@ namespace ConsoleAppForExam
             Console.WriteLine($"Your Deposite contains {Acc.Balance} RON");
             try
             {
-                Acc.withdraw(300);
+                Acc.withdraw(100);
             }catch(InvalidCastException ex)
             {
                 Console.WriteLine(ex.Message);
