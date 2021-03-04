@@ -14,6 +14,10 @@ namespace ConsoleAppForExam
         public string Holder { get; private set; }
 
         public IEnumerable<Account> Accounts { get; private set; }
+
+        internal void AddAccount(SavingsAccount account) {
+            (Accounts as List<Account>).Add(account);
+        }
     }
 
 }

@@ -38,8 +38,10 @@ namespace ConsoleAppForExam
            
         }
 
-        public void withdraw(decimal account) {
-            _account.withdraw(account);
+        public void withdraw(decimal ammount) {
+            _account.withdraw(ammount);
+            Console.WriteLine($"Account {ammount} was withdraw for the account");
+            Console.WriteLine($"Remaining {_account.Balance}");
         }
 
         public void Eject(Card card) { 
